@@ -3,7 +3,18 @@
 <html>
     <head>
         <title>Youtube.com Clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
         <style>
+
+            p {
+                font-family: Roboto, Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
 
             .thumbnail {
                 width: 300px;
@@ -15,7 +26,11 @@
             }
 
             .video-title {
-                width: 300px;
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
             }
 
             .video-preview {
@@ -25,6 +40,38 @@
                 margin-right: 15px;
             }
 
+            .channel-pic {
+                display: inline-block;
+                width: 40px;
+                vertical-align: top;
+            }
+
+            .video-info {
+                display: inline-block;
+                width: 200px;
+            }
+
+            .profile-pic {
+                width: 100%;
+                border-radius: 50%;
+            }
+
+            .thumbnail-row {
+                margin-bottom: 12px;
+            }
+
+            .video-author {
+                font-size: 14px;
+                color: rgb(96,96,96);
+                margin-bottom: 4px;
+            }
+
+            .video-stats {
+                margin-top: 0;
+                font-size: 14px;
+                color: rgb(96,96,96);
+            }
+
         </style>
     </head>
     <body>
@@ -32,35 +79,55 @@
         <input class="search-bar" type="text" placeholder="Search">
 
         <div class="video-preview">
-            <img class="thumbnail" src="/Thumbnails/thumbnail-1.webp" alt="">
 
-            <p class="video-title">
-                Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/Thumbnails/thumbnail-1.webp" alt="">
+            </div>
 
-            <p class="video-author">
-                Marques Brownlee
-            </p>
+            <div>
+                <div class="channel-pic">
+                    <img class="profile-pic" src="/Channel Logos/channel-1.jpeg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
 
-            <p class="video-stats">
-                3.4M views &#183; 6 months ago
-            </p>
+                    <p class="video-author">
+                        Marques Brownlee
+                    </p>
+
+                    <p class="video-stats">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="video-preview">
-            <img class="thumbnail" src="/Thumbnails/thumbnail-2.webp" alt="">
 
-            <p class="video-title">
-                try Not To Laugh Challenge #9
-            </p>
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/Thumbnails/thumbnail-2.webp" alt="">
+            </div>
 
-            <p class="video-author">
-                Markipiler
-            </p>
+            <div>
+                <div class="channel-pic">
+                    <img class="profile-pic" src="/Channel Logos/channel-2.jpeg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Try Not To Laugh Challenge #9
+                    </p>
 
-            <p class="video-stats">
-                19M views &#183; 4 years ago
-            </p>
+                    <p class="video-author">
+                        Markiplier
+                    </p>
+
+                    <p class="video-stats">
+                        19M views &#183; 4 years ago
+                    </p>
+                </div>
+            </div>
         </div>
 
     </body>
